@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-(![Alt Text](https://github.com/hiawc/yelp_starter/yelp.gif)
+(![Alt Text](https://github.com/hiawc/yelp_starter/yelp.gif))
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
