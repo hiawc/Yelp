@@ -40,7 +40,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](http://i.imgur.com/mgcmt5k.gifv)
+![Video Walkthrough](https://github.com/hiawc/yelp_starter/yelp.gif)
+
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
