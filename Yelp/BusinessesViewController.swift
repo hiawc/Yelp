@@ -12,7 +12,8 @@ class BusinessesViewController: UIViewController, FilterViewControllerDelegate {
 
     var businesses: [Business]?
     var searchBar: UISearchBar!
-
+    var searchTerm: String?
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -117,7 +118,15 @@ extension BusinessesViewController: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        
+        self.searchTerm = searchBar.text
+        Business.searchWithTerm(searchTerm!, completion: { (businesses: [Business]!, error: NSError!) -> Void in
+            self.businesses = businesses
+            self.tableView.reloadData()
+            for business in businesses {
+                print(business.name!)
+                print(business.address!)
+            }
+        })
         searchBar.resignFirstResponder()
     }
 
